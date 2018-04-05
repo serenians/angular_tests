@@ -1,3 +1,28 @@
-<p>
-  post works!
-</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>
+        S.No
+      </th>
+      <th>
+        Title
+      </th>
+      <th>
+        Body
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of Posts, let i = index">
+      <td>
+        {{i + 1}}
+      </td>
+      <td>
+        {{post.title}}
+      </td>
+      <td>
+        {{post.body}}
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PostComponent } from './component/post/post.component';
 import { HomeComponent } from './component/home/home.component';
+import { PostService } from './service/post.service';
 
 var routeNode : Routes = [
   {
@@ -32,7 +33,7 @@ var routeNode : Routes = [
     HttpModule,
     RouterModule.forRoot(routeNode)
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
